@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="styles/reset-CSS.css">
+    <link rel="stylesheet" href="styles/styles2.css">
+    <title>Ecriptador de Texto</title>
+</head>
+<body>
+    
+<div class="contenedor">
+    <section class="header-main">
+
+        <header class="cabecera">
+            <img src="assets/icono-remove.png" alt="encriptado de texto">
+            <h1>Encriptador de texto</h1>
+        </header>
+
+        <main class="principal">
+            <section class="texto-intro">  
+                <textarea id="texto-input" placeholder="Ingrese el texto aquí"></textarea>
+                <article class="parrafo-span">
+                    <span class="material-symbols-outlined">
+                        error
+                        </span>
+                        <p> 
+                            Solo letras minúsculas y sin acentos
+                        </p>
+                </article>
+            </section>
+
+            <section class="botones">
+                <button class="boton-encriptar" id="encriptar">
+                    Encriptar!
+                </button>
+                <button class="boton-desencriptar" id="desencriptar">
+                    Desencriptar!
+                </button>
+            </section>
+        </main>
+
+    </section>
+
+    <section class="area-result">
+        <img class="img" id="img-result" src="assets/img_encriptador.jpg" alt="imagen de un candado">
+        <textarea id="resultado" placeholder="Ingrese el texto que desees encriptar o desencriptar." readonly></textarea>
+        <button class="hidden" id="copiar">Copiar</button>
+    </section>
+        
+</div>
+    
+    <footer class="footer">
+        <p>Daniel Orlando Rios Rodríguez 2024</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

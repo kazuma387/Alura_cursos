@@ -1,0 +1,268 @@
+// Mostrar una alerta con el mensaje "¡Bienvenida y bienvenido a nuestro sitio web!"
+alert("¡Bienvenida y bienvenido a nuestro sitio web!");
+
+// Declarar e inicializar variables
+let nombre = "Luna";
+let edad = 25;
+let numeroDeVentas = 50;
+let saldoDisponible = 1000;
+
+// Establecer una variable mensajeDeError y mostrar una alerta con este mensaje
+let mensajeDeError = "¡Error Completa todos los campos";
+alert(mensajeDeError);
+
+// Utilizar un prompt para preguntar el nombre del usuario y almacenarlo en la variable nombre
+nombre = prompt("Por favor, ingresa tu nombre:");
+
+// Pide al usuario que ingrese su edad usando un prompt y almacénala en la variable edad
+edad = parseInt(prompt("Por favor, ingresa tu edad:"));
+
+// Comprobar si la edad es mayor o igual a 18 y mostrar una alerta correspondiente
+if (edad >= 18) {
+    alert("¡Puedes obtener tu licencia de conducir!");
+} else {
+    alert("Lo siento, aún no puedes obtener tu licencia de conducir.");
+}
+
+**********************************************************************************************************
+
+Pregunta al usuario qué día de la semana es. Si la respuesta es "Sábado" o "Domingo", muestra "¡Buen fin de semana!". De lo contrario, muestra "¡Buena semana!".
+
+// Variables
+alert("Que dia de la semana es hoy?");
+diaUser = prompt("Por favor, ingresa dia de la semana:");
+
+// para verificar si es un dia de la semana
+dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
+
+/*
+Este código realiza
+la comparación
+*/
+if (diaUser.toLowerCase() == "sabado" || diaUser.toLowerCase() == "domingo" ) {
+    alert("¡Buen fin de semana!");
+} else if (!dias.includes(diaUser.toLowerCase())){
+    alert("¡Ese no es un dia de la semana!");
+} else {
+    alert("¡Buena semana!");
+}
+
+*****************************************************************************************************************
+
+Verifica si un número ingresado por el usuario es positivo o negativo. Muestra una alerta informativa.
+
+//variable
+const numero = prompt("Introduce un número:");
+
+/*
+Este código realiza
+la comparación
+*/
+if (isNaN(numero)) {
+    alert('No es un número');
+} else if (numero > 0) {
+    alert("El número es positivo");
+} else if (numero < 0) {
+    alert("El número es negativo");
+} else {
+    alert("El número es cero");
+}
+*********************************************************************************************************************
+
+Crea un sistema de puntuación para un juego. Si la puntuación es mayor o igual a 100, muestra "¡Felicidades, has ganado!". En caso contrario, muestra "Intentalo nuevamente para ganar.".
+
+//variable
+const Puntuacion = prompt("Introduce un número:");
+
+/*
+Este código realiza
+la comparación
+*/
+if (Puntuacion >= 100) {
+    alert("¡Felicidades, has ganado!");
+} else {
+    alert("Intentalo nuevamente para ganar.");
+}
+
+***********************************************************************************************************************
+
+Crea un mensaje que informe al usuario sobre el saldo de su cuenta, utilizando un template string para incluir el valor del saldo.
+
+//variable
+const saldo = prompt("Introduce saldo:");
+
+alert(`Su saldo es de ${saldo}`);
+
+************************************************************************************************************************
+
+Pide al usuario que ingrese su nombre mediante un prompt. Luego, muestra una alerta de bienvenida usando ese nombre.
+
+//variable
+const nombre = prompt("Introduce tu nombre:");
+
+alert(`Bienvenido ${nombre}`);
+
+*************************************************************************************************************************
+
+Crea un contador que comience en 1 y vaya hasta 10 usando un bucle 'while'. Muestra cada número.
+
+let numero = 1
+let suma = 0;
+
+while(suma < 10){
+    suma += numero;
+    console.log(suma);
+}
+
+*************************************************************************************************************************
+
+Crea un contador que comience en 10 y vaya hasta 0 usando un bucle 'while'. Muestra cada número.
+
+let numero = 1
+let suma = 11;
+
+while(suma > 0){
+    suma -= numero;
+    console.log(suma);
+}
+
+*****************************************************************************************************************************
+
+Crea un programa de cuenta progresiva. Pide un número y cuenta desde 0 hasta ese número utilizando un bucle 'while' en la consola del navegador.
+
+let numero = parseInt(prompt('Digite el numero:'));
+let suma = 0;
+
+while(suma < numero){
+    suma += 1;
+    console.log(suma);
+}
+
+******************************************************************************************************************************
+
+Crea un programa de cuenta regresiva. Pide un número y cuenta desde ese numero hasta 0 utilizando un bucle 'while' en la consola del navegador.
+
+let numero = parseInt(prompt('Digite el numero:'));
+
+while(numero >= 0){
+    console.log(numero);
+     numero--;
+}
+
+******************************************************************************************************************************
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios de Programación</title>
+</head>
+<body>
+
+<script>
+// Mensaje de bienvenida
+let nombre = "Tu Nombre";
+console.log(`¡Hola, ${nombre}`);
+
+// Alerta con nombre
+alert(`¡Hola, ${nombre}`);
+
+// Pregunta sobre el lenguaje de programación favorito
+let lenguajeFavorito = prompt("¿Cuál es el lenguaje de programación que más te gusta?");
+console.log(lenguajeFavorito);
+
+// Suma de dos valores
+let valor1 = 5;
+let valor2 = 3;
+let resultadoSuma = valor1 + valor2;
+console.log(`La suma de ${valor1} y ${valor2} es igual a ${resultadoSuma}`);
+
+// Resta de dos valores
+let resultadoResta = valor1 - valor2;
+console.log(`La diferencia entre ${valor1} y ${valor2} es igual a ${resultadoResta}`);
+
+// Verificación de edad
+let edad = parseInt(prompt("Por favor, ingresa tu edad."));
+if (edad >= 18) {
+    console.log("Eres mayor de edad.");
+} else {
+    console.log("Eres menor de edad.");
+}
+
+// Verificar si un número es positivo, negativo o cero
+let numero = parseInt(prompt("Ingresa un número."));
+if (numero > 0) {
+    console.log("El número es positivo.");
+} else if (numero < 0) {
+    console.log("El número es negativo.");
+} else {
+    console.log("El número es cero.");
+}
+
+// Mostrar números del 1 al 10 usando un bucle while
+let i = 1;
+while (i <= 10) {
+    console.log(i);
+    i++;
+}
+
+// Determinar si una nota es aprobatoria
+let nota = 8; // Cambia este valor según sea necesario
+if (nota >= 7) {
+    console.log("Aprobado");
+} else {
+    console.log("Reprobado");
+}
+
+// Generar un número aleatorio
+console.log(Math.random());
+
+// Generar un número entero entre 1 y 10
+console.log(Math.floor(Math.random() * 10) + 1);
+
+// Generar un número entero entre 1 y 1000
+console.log(Math.floor(Math.random() * 1000) + 1);
+</script>
+
+</body>
+</html>
+
+*************************************************************************************************************
+funciones
+
+// Crear una función que muestre "¡Hola, mundo!" en la consola.
+let saludo = () => console.log("Hola Mundo");
+
+// Crear una función que reciba un nombre como parámetro y muestre "¡Hola, [nombre]!" en la consola.
+function saludoPersonal(nombre) {
+    console.log(`¡Hola, ${nombre}!`);
+}
+
+// Crear una función que reciba un número como parámetro y devuelva el doble de ese número.
+let porDos = (num) => console.log(2*num);
+
+// Crear una función que reciba tres números como parámetros y devuelva su promedio.
+let promedio = (num1, num2, num3) => console.log((num1+num2+num3)/3);
+
+// Crear una función que reciba dos números como parámetros y devuelva el mayor de ellos.
+function elMayor(num1, num2) {
+    if (num1 > num2) {
+        return console.log(num1)
+    } else {
+        return console.log(num2)
+    }
+}
+
+// Crear una función que reciba un número como parámetro y devuelva el resultado de multiplicar ese número por sí mismo.
+let alCuadrado = (num) => console.log(num*num)
+
+// ejemplos
+saludo()
+saludoPersonal("Daniel")
+porDos(4)
+promedio(4,6,8)
+elMayor(8,9)
+alCuadrado(6)
+
+******************************************************************************************************************************

@@ -1,0 +1,39 @@
+Para lograr que el input crezca verticalmente cuando se introduce mucho texto, podemos usar un elemento <textarea> en lugar de un <input> para el campo de entrada de texto. El <textarea> es más adecuado para texto multilínea y puede crecer automáticamente.
+
+Aquí tienes las modificaciones necesarias:
+
+En el HTML, cambia el <input> por un <textarea>:
+
+<textarea id="texto-input" placeholder="Ingrese el texto aquí"></textarea>
+En el CSS, añade estilos para hacer que el <textarea> se ajuste automáticamente:
+
+<style>
+    #texto-input {
+        width: 100%; /* O el ancho que prefieras */
+        min-height: 100px; /* Altura mínima */
+        max-height: 300px; /* Altura máxima */
+        resize: vertical; /* Permite redimensionar verticalmente */
+        overflow-y: auto; /* Añade scroll vertical si es necesario */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+</style>
+En JavaScript, añade un evento para ajustar la altura automáticamente:
+
+document.addEventListener('DOMContentLoaded', function() {
+    const textoInput = document.getElementById('texto-input');
+
+    textoInput.addEventListener('input', function() {
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight) + 'px';
+    });
+
+    // ... resto del código ...
+});
+Estos cambios harán que:
+
+El área de texto tenga una altura mínima de 100px.
+Crezca automáticamente hasta un máximo de 300px.
+Si el texto excede los 300px, aparecerá una barra de desplazamiento.
+El usuario podrá redimensionar manualmente el área de texto verticalmente si lo desea.
+Con estas modificaciones, el área de entrada de texto crecerá verticalmente a medida que se introduzca más texto, proporcionando una mejor experiencia de usuario para textos largos.

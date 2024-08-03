@@ -1,0 +1,16 @@
+<meta name="description"
+    content="Hola bienvenidos al mejor encriptador de texo, espero que les sea de ayuda">
+    <link rel="canonical" href="https://kazuma387.github.io/encriptador/encriptador-de-texto">
+    <link rel="favicon" href="https://kazuma387.github.io/encriptador/encriptador-de-texto/assets/crip_ico.png">
+    <link rel="apple-touch-icon"
+    href="https://kazuma387.github.io/encriptador/encriptador-de-texto/assets/crip_ico.png">
+    <meta name="theme-color" content="#d9006">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:type" content="website">
+    <meta property="og:title" name="twitter:title" content="Encriptador de texto">
+    <meta property="og:description" name="twitter:description"
+    content="Hola bienvenidos al mejor encriptador de texo, espero que les sea de ayuda">
+    <meta property="og:image" name="twitter:image"
+    content="https://kazuma387.github.io/encriptador/encriptador-de-texto/assets/img_encriptador.jpg">
+    <meta property="og:url" name="twitter:url"
+    content="https://kazuma387.github.io/encriptador/encriptador-de-texto">
